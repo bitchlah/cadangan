@@ -14,10 +14,10 @@ from PunyaAlby import BOTLOG_CHATID, LOGGER, LOOP, bots
 from PunyaAlby.helpers.misc import git, heroku
 
 MSG_ON = """
-🔥 **PROJECTS-Userbot Berhasil Di Aktifkan**
+🔥 **ALBY-Userbot Berhasil Di Aktifkan**
 ━━
 ➠ **Userbot Version -** `{}`
-➠ **Ketik** `{}alive` **untuk Mengecheck Bot**
+➠ **Ketik** `{}ping` **untuk Mengecheck Bot**
 ━━
 """
 
@@ -27,8 +27,9 @@ async def main():
         try:
             await bot.start()
             bot.me = await bot.get_me()
-            await bot.join_chat("Lunatic0de")
-            await bot.join_chat("SharingUserbot")
+            await bot.join_chat("ruangdiskusikami")
+            await bot.join_chat("ruangprojects")
+            await bot.join_chat("ruang_gabutku")
             await bot.send_message(BOTLOG_CHATID, MSG_ON.format(BOT_VER, CMD_HANDLER))
         except Exception as a:
             LOGGER("main").warning(a)
@@ -36,9 +37,9 @@ async def main():
 
 
 if __name__ == "__main__":
-    LOGGER("PunyaAlby").info("Starting PROJECTS-UserBot")
+    LOGGER("PunyaAlby").info("Starting ALBY-UserBot")
     LOGGER("PunyaAlby").info(f"Total Clients = {len(bots)} Users")
     git()
     heroku()
-    LOGGER("PunyaAlby").info(f"PROJECTS-UserBot v{BOT_VER} [🔥 BERHASIL DIAKTIFKAN! 🔥]")
+    LOGGER("PunyaAlby").info(f"ALBY-UserBot v{BOT_VER} [🔥 BERHASIL DIAKTIFKAN! 🔥]")
     LOOP.run_until_complete(main())
