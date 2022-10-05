@@ -14,13 +14,13 @@ from PunyaAlby import BOTLOG_CHATID, LOGGER, LOOP, bots
 from PunyaAlby.helpers.misc import git, heroku
 
 MSG_ON = """
-📍 **ALBY-PYROBOT DIAKTIFKAN**
-   (\︵/) 
+**ALBY-PYROBOT DIAKTIFKAN**🔥
+    (\︵/) 
 　⫺( •ᆺ•)⫹ 
-┏━∪ ━━━━━━━━━━━
-╏➠ **Userbot Version -** `{}`
-╏➠ **Ketik** `{}alby` **untuk Mengecheck Bot**
-┗━━━━━━━━━━━━━
+┏━∪ ━━━━━━━━
+➠ **Userbot Version -** `{}`
+➠ **Ketik** `{}alby` **untuk Mengecheck Bot**
+┗━━━━━━━━━━
 """
 
 
