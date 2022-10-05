@@ -47,7 +47,7 @@ async def main():
             await bot.join_chat("ruangdiskusikami")
             await bot.join_chat("ruangprojects")
             await bot.join_chat("ruang_gabutku")
-            await startupmessage(bot)
+            await bot.startupmessage(bot)
         except Exception as a:
             LOGGER("main").warning(a)
     await idle()
