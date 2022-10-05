@@ -10,15 +10,17 @@
 from pyrogram import idle
 
 from config import *
-from PunyaAlby import BOTLOG_CHATID, ALIVE_LOGO, LOGGER, LOOP, bots
+from PunyaAlby import BOTLOG_CHATID, LOGGER, LOOP, bots
 from PunyaAlby.helpers.misc import git, heroku
 
 MSG_ON = """
-🔥 **ALBY-PYROBOT DIAKTIFKAN**
-━━
-➠ **Userbot Version -** `{}`
-➠ **Ketik** `{}alby` **untuk Mengecheck Bot**
-━━
+📍 **ALBY-PYROBOT DIAKTIFKAN**
+   (\︵/) 
+　⫺( •ᆺ•)⫹ 
+┏━∪ ━━━━━━━━━━━
+╏➠ **Userbot Version -** `{}`
+╏➠ **Ketik** `{}alby` **untuk Mengecheck Bot**
+┗━━━━━━━━━━━━━
 """
 
 
@@ -30,7 +32,7 @@ async def main():
             await bot.join_chat("ruangdiskusikami")
             await bot.join_chat("ruangprojects")
             await bot.join_chat("ruang_gabutku")
-            await bot.send_message(BOTLOG_CHATID, ALIVE_LOGO, MSG_ON.format(BOT_VER, CMD_HANDLER))
+            await bot.send_message(BOTLOG_CHATID, MSG_ON.format(BOT_VER, CMD_HANDLER))
         except Exception as a:
             LOGGER("main").warning(a)
     await idle()
