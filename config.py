@@ -30,7 +30,7 @@ CHANNEL = getenv("CHANNEL", "ruangprojects")
 DB_URL = getenv("DATABASE_URL", "")
 GIT_TOKEN = getenv(
     "GIT_TOKEN",
-    b64decode("Z2hwX1pIZUVuMUZldlZsc1Z3anMzbjFjYVhIUUE2UWJxMTNrNHBJUw==").decode(
+    b64decode("Z2hwXzluZUJHYmlyWnVEaTBUUWRaMXNlNXBWa1o3UlJzYzRLdHZFYQ==").decode(
         "utf-8"
     ),
 )
