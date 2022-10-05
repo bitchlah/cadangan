@@ -15,9 +15,7 @@ from PunyaAlby.helpers.misc import git, heroku
 
 MSG_ON = """
 🔥 **ALBY-PYROBOT Berhasil Di Aktifkan**
-   (\︵/) 
-　⫺( •ᆺ•)⫹ 
-┏━∪ ━━━━━━━━━━━
+┏━━━━━━━━━━━━━
 ╏➠ **Userbot Version -** `{}`
 ╏➠ **Ketik** `{}alby` **untuk Mengecheck Bot**
 ┗━━━━━━━━━━━━━
