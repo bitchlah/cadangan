@@ -22,21 +22,6 @@ MSG_ON = """
 ╏➠ **Ketik** `{}alby` **untuk Mengecheck Bot**
 ┗━━━━━━━━━━━━━
 """
-async def startupmessage(bot):
-    """
-    Start up message in telegram logger group
-    """
-    try:
-        if BOTLOG_CHATID:
-            await bot.send_file(
-                BOTLOG_CHATID,
-                ALIVE_LOGO,
-                caption=MSG_ON.format(BOT_VER, CMD_HANDLER),
-                reply_to_message_id=ReplyCheck(message),
-            )
-    except Exception as e:
-        LOGGER.error(e)
-        return None
 
 
 async def main():
@@ -47,7 +32,7 @@ async def main():
             await bot.join_chat("ruangdiskusikami")
             await bot.join_chat("ruangprojects")
             await bot.join_chat("ruang_gabutku")
-            await bot.startupmessage(bot)
+            await bot.send_message(BOTLOG_CHATID, ALIVE_LOGO, MSG_ON.format(BOT_VER, CMD_HANDLER))
         except Exception as a:
             LOGGER("main").warning(a)
     await idle()
